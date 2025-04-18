@@ -1,0 +1,17 @@
+﻿@model CinemaManager_ahmedazizbenayed.Models.Cinema.Producer
+
+@{
+    ViewData["Title"] = "Détails du Producteur";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h4>@Model.Name</h4>
+    <p><strong>Email :</strong></p>
+    <p>@Model.Email</p>
+    <p><strong>Nationality :</strong></p>
+    <p>@Model.Nationality</p>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary">Retour à la liste</a>

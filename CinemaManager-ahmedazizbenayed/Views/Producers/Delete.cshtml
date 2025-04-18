@@ -1,0 +1,20 @@
+﻿@model CinemaManager_ahmedazizbenayed.Models.Cinema.Producer
+
+@{
+    ViewData["Title"] = "Supprimer un Producteur";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h3>Voulez-vous vraiment supprimer ce producteur ?</h3>
+
+<div>
+    <h4>@Model.Name</h4>
+    <p><strong>Nationality :</strong> @Model.Nationality</p>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Supprimer</button>
+    <a asp-action="Index" class="btn btn-secondary">Annuler</a>
+</form>
